@@ -22,6 +22,8 @@ The main scripts (mongo_course_loader.py, program_scraper.py, and schedule_scrap
 
 Notice that `mongo_course_loader.py` is not in this table. This is because the core functionality is so integrated with MongoDB that without it, the script has no real purpose.
 
+**MongoDB Atlas Authentication:** If you want to use the MongoDB Atlas integration, you should create a file called `secret.py` and define three variables in it called `user`, `passwd`, and `url`, corresponding to the username, password, and database url for the MongoDB Atlas database cluster you plan on using.
+
 ## program_scraper.py
 ** About:** This script is used to scrape data about programs at UVA from the website of the [University Registrar](https://registrar.virginia.edu). This includes data about the majors, minors, certificates, and other academic programs available at the University, including what schools they are taught in (College of Arts &amp; Sciences, School of Engineering and Applied Science, etc.).
 
